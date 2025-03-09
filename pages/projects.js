@@ -35,6 +35,20 @@ export default function Home() {
                 Download
               </Link>
             </div>
+
+            <div>
+              <h1 class="title">Osint.Kit</h1>
+              <p class="description">Osint.kit is an osint toolkit with more tools than you will know what do do with.</p>
+              <p class="features">Features</p>
+              <ul>
+                <li>Networking tools</li>
+                <li>Discord tools</li>
+                <li>Api methods</li>
+              </ul>
+              <Link class="link" href="https://github.com/jwe0/osint.kit">
+                Download
+              </Link>
+            </div>
           </div>  
 
       </div>
