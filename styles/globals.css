@@ -1,24 +1,125 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: white;
+  background: black;
   font-family: Arial, Helvetica, sans-serif;
+
+  background-image: url("/pixelated_bw.png");
+  background-position: center;
+  margin: 5px;
+} 
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.projects div {
+  border: 2px solid rgb(36, 36, 36);
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.144);
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 700px;
+  text-wrap: balance;
+  background-color: rgba(128, 128, 128, 0.637);
+  color: white;
+}
+
+.projects div .title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.projects div .description {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.projects div img {
+  width: 100%;
+  border: 2px solid rgb(36, 36, 36);
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.144);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.projects div .link {
+  text-decoration: none;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+
+.projects div .link:hover {
+  background-color: rgb(0, 0, 0);
+  transition-duration: 200ms;
+}
+
+.projects div .features {
+  font-weight: bold;
+}
+
+.projects div ul {
+  margin-bottom: 10px;
+  list-style: decimal;
+  margin-left: 20px;
+}
+
+.projects div ul li {
+  margin-bottom: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 92vh;
+  justify-content: center;
+}
+
+.contact div {
+  border: 3px solid rgb(36, 36, 36);
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.144);
+  margin: 5px;
+  border-radius: 5px;
+  width: 500px;
+  height: 100px;
+  text-wrap: balance;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.705);
+  font-size: 1.2rem;
+}
+
+.contact div:hover{
+  transform: translateY(-5px);
+  transition-duration: 200ms;
+}
+
+.contact div .logo {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border: 2px solid rgb(36, 36, 36);
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.144);
+  border-radius: 5px;
+}
+
+.contact div .logo:hover {
+  text-decoration: underline;
+}
+
+.contact div .info {
+  margin: 10px;
+  text-align: center;
 }
